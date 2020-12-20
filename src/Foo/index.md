@@ -1,16 +1,20 @@
 ---
+title: 组件1
+group:
+  title: 组件
+  path: /bu
 nav:
   title: Components
   path: /components
 ---
 
-## Foo
+## 组件 1
 
 Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'dumi';
+import { Foo } from 'cz-components';
 
 export default () => <Foo title="First Demo" />;
 ```
