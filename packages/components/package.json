@@ -1,6 +1,6 @@
 {
   "name": "cz-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "这是我的组件",
   "main": "index.ts",
   "author": "chenzhao ",
@@ -9,7 +9,7 @@
     "antd": "^4.9.4"
   },
   "dependencies": {
-    "cz-utils": "^0.0.1",
+    "cz-utils": "^0.0.2",
     "react": "^17.0.1"
   },
   "gitHead": "986edc50914686e4497924c8f2d58fd6f0e4d95a"
