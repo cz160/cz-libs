@@ -11,5 +11,6 @@
   "dependencies": {
     "cz-utils": "^0.0.1",
     "react": "^17.0.1"
-  }
+  },
+  "gitHead": "986edc50914686e4497924c8f2d58fd6f0e4d95a"
 }

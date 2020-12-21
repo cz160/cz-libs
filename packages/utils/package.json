@@ -4,5 +4,6 @@
   "description": "这是公共方法",
   "main": "index.ts",
   "author": "陈昭",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "986edc50914686e4497924c8f2d58fd6f0e4d95a"
 }
