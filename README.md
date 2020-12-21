@@ -33,6 +33,7 @@ $ npm run build
 - 命令
 
 ```
+用yarn来处理依赖问题，用lerna来处理发布问题
 1. 给所有包安装依赖
 lerna bootstrap
 2.给某个包安装依赖
