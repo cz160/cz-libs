@@ -27,7 +27,7 @@
   "dependencies": {
     "ahooks": "^2.9.2"
   },
-  "gitHead": "d6a267c2871c778afdd7c7240c3fe15e22b349d1",
+  "gitHead": "fe866d69cd95761f0c22a872330d74bcb675ea4e",
   "publishConfig": {
     "access": "public"
   }

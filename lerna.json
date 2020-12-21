@@ -3,5 +3,10 @@
   "ignoreChanges": ["*.md"],
   "packages": ["packages/*"],
   "useWorkspaces": true,
-  "version": "0.0.3"
+  "version": "0.0.3",
+  "command": {
+    "publish": {
+      "verifyAccess": false
+    }
+  }
 }
