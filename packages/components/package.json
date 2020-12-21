@@ -7,5 +7,9 @@
   "license": "MIT",
   "devDependencies": {
     "antd": "^4.9.4"
+  },
+  "dependencies": {
+    "cz-utils": "^1.0.0",
+    "react": "^17.0.1"
   }
 }

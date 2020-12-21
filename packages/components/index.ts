@@ -1,1 +1,2 @@
-import { default as Button } from './src/button';
+import './src/styles';
+export { default as Button } from './src/button';
