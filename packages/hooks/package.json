@@ -26,5 +26,9 @@
   "homepage": "https://github.com/cz160/dumi-learning#readme",
   "dependencies": {
     "ahooks": "^2.9.2"
+  },
+  "gitHead": "d6a267c2871c778afdd7c7240c3fe15e22b349d1",
+  "publishConfig": {
+    "access": "public"
   }
 }

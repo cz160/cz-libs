@@ -12,5 +12,8 @@
     "cz-utils": "^0.0.2",
     "react": "^17.0.1"
   },
-  "gitHead": "986edc50914686e4497924c8f2d58fd6f0e4d95a"
+  "gitHead": "d6a267c2871c778afdd7c7240c3fe15e22b349d1",
+  "publishConfig": {
+    "access": "public"
+  }
 }
