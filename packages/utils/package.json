@@ -1,6 +1,6 @@
 {
   "name": "cz-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "这是公共方法",
   "main": "index.ts",
   "author": "陈昭",
