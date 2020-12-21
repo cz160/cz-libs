@@ -1,0 +1,11 @@
+{
+  "name": "cz-components",
+  "version": "1.0.0",
+  "description": "这是我的组件",
+  "main": "index.ts",
+  "author": "chenzhao ",
+  "license": "MIT",
+  "devDependencies": {
+    "antd": "^4.9.4"
+  }
+}
