@@ -5,7 +5,7 @@
   "main": "index.ts",
   "author": "陈昭",
   "license": "MIT",
-  "gitHead": "fe866d69cd95761f0c22a872330d74bcb675ea4e",
+  "gitHead": "b668283b1d0d3952b8807c09218e07444a2f3496",
   "publishConfig": {
     "access": "public"
   }
