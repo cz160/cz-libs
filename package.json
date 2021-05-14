@@ -1,8 +1,10 @@
 {
-  "name": "cz-libs",
+  "name": "cz",
   "version": "0.0.1",
   "scripts": {
-    "start": "dumi dev",
+    "bootstrap":"lerna clean -y && lerna bootstrap",
+    "createLib":"cd packages && lerna create",
+    "start": "yarn  && dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist"
   },

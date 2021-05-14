@@ -1,14 +1,16 @@
 {
-  "name": "@cz/utils",
-  "version": "1.0.0",
-  "description": "方法库",
+  "name": "@cz/hooks",
+  "version": "0.0.1",
+  "description": "hooks库",
+  "keywords": [
+    "hooks"
+  ],
   "author": "陈昭 <chenz@weipaitang.com>",
   "homepage": "https://github.com/cz160/cz-libs#readme",
-  "license": "MIT",
+  "license": "ISC",
   "main": "lib/index.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
