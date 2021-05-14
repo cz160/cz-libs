@@ -8,15 +8,16 @@
   "author": "陈昭 <chenz@weipaitang.com>",
   "homepage": "https://github.com/cz160/cz-libs#readme",
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "directories": {
-    "lib": "lib"
+    "dist": "dist"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
   },
   "bugs": {
     "url": "https://github.com/cz160/cz-libs/issues"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   }
 }

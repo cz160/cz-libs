@@ -1,30 +1,6 @@
-# dumi
+# 小昭小发学习库
 
-## Getting Started
-
-Install dependencies,
-
-```bash
-$ npm i
-```
-
-Start the dev server,
-
-```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
+## 起步
 
 # lerna + yarn 的 monorepo 工作流
 

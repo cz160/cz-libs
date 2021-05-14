@@ -2,8 +2,9 @@
   "name": "cz",
   "version": "0.0.1",
   "scripts": {
-    "bootstrap":"lerna clean -y && lerna bootstrap",
-    "createLib":"cd packages && lerna create",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "createLib": "cd packages && lerna create",
     "start": "yarn  && dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist"
@@ -25,8 +26,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-
   "dependencies": {
+    "antd": "^4.15.5",
     "react": "^16.12.0"
   },
   "devDependencies": {
