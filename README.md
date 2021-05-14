@@ -3,9 +3,16 @@
 ## 起步
 
 - 安装多包依赖和相互依赖 link
-  yarn bootstrap
+
+```
+yarn bootstrap
+```
+
 - 启动文档
-  yarn start
+
+```
+ yarn start
+```
 
 ## 目录说明
 
@@ -43,3 +50,7 @@ lerna add 包名(给所有包安装)
         "access": "public"
     },
 ```
+
+## 说明
+
+编写例子时使用 antd，全局引入 antd 样式
