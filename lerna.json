@@ -1,12 +1,14 @@
 {
   "npmClient": "yarn",
-  "ignoreChanges": ["*.md"],
   "packages": ["packages/*"],
-  "useWorkspaces": true,
-  "version": "0.0.5",
+  "version": "independent",
   "command": {
     "publish": {
-      "verifyAccess": false
+      "verifyAccess": false,
+      "ignoreChanges": [".gitignore", "*.md", "*.log"],
+      "version": {
+        "exact": true
+      }
     }
   }
 }

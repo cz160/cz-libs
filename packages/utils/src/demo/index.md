@@ -4,7 +4,7 @@ group:
   title: 方法
   path: /add
 nav:
-  title: utils
+  title: 方法库
   path: /utils
 ---
 

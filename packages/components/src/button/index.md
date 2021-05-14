@@ -4,7 +4,7 @@ group:
   title: 组件
   path: /demo
 nav:
-  title: components
+  title: 组件库
   path: /components
 ---
 
