@@ -2,8 +2,8 @@
   "name": "cz",
   "version": "0.0.1",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean",
+    "bootstrap": "yarn clean && lerna bootstrap",
+    "clean": "lerna clean -y",
     "createLib": "cd packages && lerna create",
     "start": "yarn  && dumi dev",
     "docs:build": "dumi build",

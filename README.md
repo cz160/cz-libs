@@ -2,7 +2,21 @@
 
 ## 起步
 
-# lerna + yarn 的 monorepo 工作流
+- 安装多包依赖和相互依赖 link
+  yarn bootstrap
+- 启动文档
+  yarn start
+
+## 目录说明
+
+- packages：开发目录
+
+```
+hooks: 公共hooks目录
+utils: 公共方法目录
+```
+
+## lerna 常规操作
 
 - 创建包
   lerna create 包名 -y
