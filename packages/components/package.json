@@ -1,0 +1,40 @@
+{
+  "name": "@cz/components",
+  "version": "0.0.1",
+  "description": "组件库",
+  "author": "陈昭 <chenz@weipaitang.com>",
+  "homepage": "https://github.com/cz160/cz-libs#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cz160/cz-libs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "father-build"
+  },
+  "bugs": {
+    "url": "https://github.com/cz160/cz-libs/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.9",
+    "father-build": "^1.19.1"
+  }
+}

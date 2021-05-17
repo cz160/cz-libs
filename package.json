@@ -9,7 +9,9 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "lerna run build",
-    "build:h": "lerna run build --scope=@cz/hooks"
+    "build:h": "lerna run build --scope=@cz/hooks",
+    "build:u": "lerna run build --scope=@cz/utils",
+    "build:c": "lerna run build --scope=@cz/components"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
