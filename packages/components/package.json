@@ -1,5 +1,5 @@
 {
-  "name": "@cz160/components",
+  "name": "zh-components",
   "version": "0.0.4",
   "description": "组件库",
   "author": "陈昭 <chenz@weipaitang.com>",
@@ -37,5 +37,5 @@
     "@types/react-dom": "^16.9.9",
     "father-build": "^1.19.1"
   },
-  "gitHead": "8e432f52fd871c7ed38a505976af8ca03fa191d0"
+  "gitHead": "dbba6a2df72bc95fd9d091db18a8470d989abba7"
 }
