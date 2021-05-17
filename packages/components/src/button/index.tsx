@@ -8,9 +8,16 @@ export interface ButtonProps {
   children: React.ReactNode;
   prefixCls?: string;
   onClick?: (e: any) => void;
+  disabled?: boolean;
 }
 const Button: React.FC<ButtonProps> = props => {
-  const { type = 'default', children, prefixCls = 'cz-btn', onClick } = props;
+  const {
+    type = 'default',
+    disabled = false,
+    children,
+    prefixCls = 'cz-btn',
+    onClick,
+  } = props;
 
   // 处理点击事件
   const handleClick = useCallback(
@@ -28,6 +35,7 @@ const Button: React.FC<ButtonProps> = props => {
         [`${prefixCls}-${type}`]: type,
       })}
       onClick={handleClick}
+      disabled={disabled}
     >
       {children}
     </button>
