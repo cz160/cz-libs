@@ -11,7 +11,8 @@
     "build": "lerna run build",
     "build:h": "lerna run build --scope=@cz/hooks",
     "build:u": "lerna run build --scope=@cz/utils",
-    "build:c": "lerna run build --scope=@cz/components"
+    "build:c": "lerna run build --scope=@cz/components",
+    "pub":"lerna publish"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
