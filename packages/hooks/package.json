@@ -1,5 +1,5 @@
 {
-  "name": "zh-hooks",
+  "name": "chenzhao-hooks",
   "version": "0.0.5",
   "description": "hooks库",
   "keywords": [
@@ -33,5 +33,5 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "gitHead": "dbba6a2df72bc95fd9d091db18a8470d989abba7"
+  "gitHead": "656a3238ee9001e359465936f41d45f9f2559b72"
 }
