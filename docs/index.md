@@ -4,7 +4,7 @@ hero:
   desc: 封装日常经常使用方法、hooks、组件
   actions:
     - text: 开始探索
-      link: /utils
+      link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 方法中心

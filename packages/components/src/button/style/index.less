@@ -1,0 +1,23 @@
+.@{cz-prefix}-btn {
+  display: inline-block;
+  border: @btn-border-width @btn-border-style @btn-default-border;
+  cursor: pointer;
+  border-radius: @btn-border-radius-base;
+  font-size: @font-size-base;
+  font-weight: @btn-font-weight;
+  height: @height-base;
+  padding: 4px 15px;
+
+  &-default {
+    background: @btn-default-bg;
+    color: @btn-default-color;
+    &:hover {
+      border-color: @primary-color;
+      color: @primary-color;
+    }
+  }
+  &-primary {
+    background: @btn-primary-bg;
+    color: @btn-primary-color;
+  }
+}

@@ -9,3 +9,23 @@ nav:
 ---
 
 # Button
+
+按钮组件
+
+## 代码演示
+
+```tsx
+import React from 'react';
+import { Button } from '@cz160/components';
+
+export default () => {
+  return (
+    <>
+      <Button onClick={e => console.log(e)}>111</Button>
+      <br />
+      <br />
+      <Button type="primary">222</Button>
+    </>
+  );
+};
+```
