@@ -14,7 +14,7 @@
     "src"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,6 @@
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.9",
     "father-build": "^1.19.1"
-  }
+  },
+  "gitHead": "ed73f6bfab77185382c2d802abd7d033b068972a"
 }
