@@ -1,5 +1,5 @@
 {
-  "name": "@cz/utils",
+  "name": "@zhuhe_cz/utils",
   "version": "0.0.2",
   "description": "方法库",
   "author": "陈昭 <chenz@weipaitang.com>",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/cz160/cz-libs/issues"
   },
-  "gitHead": "ed73f6bfab77185382c2d802abd7d033b068972a"
+  "gitHead": "8e432f52fd871c7ed38a505976af8ca03fa191d0"
 }

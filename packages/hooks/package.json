@@ -1,5 +1,5 @@
 {
-  "name": "@cz/hooks",
+  "name": "@zhuhe_cz/hooks",
   "version": "0.0.3",
   "description": "hooks库",
   "keywords": [
@@ -33,5 +33,5 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "gitHead": "ed73f6bfab77185382c2d802abd7d033b068972a"
+  "gitHead": "8e432f52fd871c7ed38a505976af8ca03fa191d0"
 }

@@ -12,7 +12,7 @@
     "build:h": "lerna run build --scope=@cz/hooks",
     "build:u": "lerna run build --scope=@cz/utils",
     "build:c": "lerna run build --scope=@cz/components",
-    "pub":"lerna publish"
+    "pub":"lerna publish --access public"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
