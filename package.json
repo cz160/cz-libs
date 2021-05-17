@@ -1,6 +1,6 @@
 {
   "name": "cz",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "bootstrap": "yarn clean && lerna bootstrap",
     "clean": "lerna clean -y",
@@ -12,7 +12,7 @@
     "build:h": "lerna run build --scope=@cz/hooks",
     "build:u": "lerna run build --scope=@cz/utils",
     "build:c": "lerna run build --scope=@cz/components",
-    "pub":"lerna publish --access public"
+    "pub": "lerna publish"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
