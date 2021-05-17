@@ -16,7 +16,7 @@ nav:
 
 ```tsx
 import React, { useState } from 'react';
-import { useMount } from '@cz/hooks';
+import { useMount } from '@cz160/hooks';
 import { Button } from 'antd';
 
 export default () => {

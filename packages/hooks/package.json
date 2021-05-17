@@ -1,5 +1,5 @@
 {
-  "name": "chenzhao-hooks",
+  "name": "@cz160/hooks",
   "version": "0.0.6",
   "description": "hooks库",
   "keywords": [
@@ -17,7 +17,8 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "git",
