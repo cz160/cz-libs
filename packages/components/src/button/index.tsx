@@ -32,10 +32,10 @@ const Button: React.FC<ButtonProps> = props => {
   return (
     <button
       className={cx(prefixCls, {
-        [`${prefixCls}-${type}`]: type,
+        [`${prefixCls}-${type}`]: type && !disabled,
+        [`${prefixCls}-disabled`]: disabled,
       })}
       onClick={handleClick}
-      disabled={disabled}
     >
       {children}
     </button>
