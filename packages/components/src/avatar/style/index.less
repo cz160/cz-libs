@@ -2,11 +2,30 @@
 
 .@{avatar-prefix-cls} {
   box-sizing: border-box;
+  color: @white;
+  display: inline-block;
+  position: relative;
+  width: @avatar-size;
+  height: @avatar-size;
+  line-height: @avatar-size;
   // demo
   margin-top: 16px;
   margin-right: 16px;
-
   background: #ccc;
+
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &-string {
+    left: 50%;
+    position: absolute;
+    transform-origin: 0 center;
+    transform: scale(1) translateX(-50%);
+  }
 
   // 形状 | shape
   &-square {
@@ -14,14 +33,15 @@
   }
 
   &-circle {
-    border-radius: @avatar-border-radius-base;
+    border-radius: 50%;
   }
 
   // 大小 | size
   &-lg {
     width: @avatar-size-lg;
     height: @avatar-size-lg;
-    line-height: @avatar-size-lg;
+    // line-height: @avatar-size-lg;
+    font-size: @avatar-font-size-lg;
 
     .ant-avatar-icon {
       font-size: @avatar-font-size-lg;
@@ -31,17 +51,19 @@
   &-sm {
     width: @avatar-size-sm;
     height: @avatar-size-sm;
-    line-height: @avatar-size-sm;
+    // line-height: @avatar-size-sm;
+    font-size: @avatar-font-size-sm;
 
     .ant-avatar-icon {
       font-size: @avatar-font-size-sm;
     }
   }
 
-  &-default {
-  }
-
   // 图标 | icon
   &-icon {
+  }
+  // image
+  &-image {
+    background: 0 0;
   }
 }

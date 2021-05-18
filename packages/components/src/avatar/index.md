@@ -43,6 +43,7 @@ export default () => {
         <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>
           U
         </Avatar>
+        <Avatar style={{ backgroundColor: '#87d068' }} />
       </div>
     </>
   );
