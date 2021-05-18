@@ -1,25 +1,22 @@
-@btn-prefix-cls: ~'@{cz-prefix}-btn';
+@space-prefix-cls: ~'@{cz-prefix}-space';
 
-.@{btn-prefix-cls} {
-  display: inline-block;
-  border: @btn-border-width @btn-border-style @btn-default-border;
-  cursor: pointer;
-  border-radius: @btn-border-radius-base;
-  font-size: @font-size-base;
-  font-weight: @btn-font-weight;
-  height: @height-base;
-  padding: 4px 15px;
-
-  &-default {
-    background: @btn-default-bg;
-    color: @btn-default-color;
-    &:hover {
-      border-color: @primary-color;
-      color: @primary-color;
-    }
+.@{space-prefix-cls} {
+  display: flex;
+  &-vertical {
+    flex-direction: column;
   }
-  &-primary {
-    background: @btn-primary-bg;
-    color: @btn-primary-color;
+  &-align {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-baseline {
+      align-items: baseline;
+    }
   }
 }
