@@ -1,0 +1,47 @@
+@avatar-prefix-cls: ~'@{cz-prefix}-avatar';
+
+.@{avatar-prefix-cls} {
+  box-sizing: border-box;
+  // demo
+  margin-top: 16px;
+  margin-right: 16px;
+
+  background: #ccc;
+
+  // 形状 | shape
+  &-square {
+    border-radius: 0;
+  }
+
+  &-circle {
+    border-radius: @avatar-border-radius-base;
+  }
+
+  // 大小 | size
+  &-lg {
+    width: @avatar-size-lg;
+    height: @avatar-size-lg;
+    line-height: @avatar-size-lg;
+
+    .ant-avatar-icon {
+      font-size: @avatar-font-size-lg;
+    }
+  }
+
+  &-sm {
+    width: @avatar-size-sm;
+    height: @avatar-size-sm;
+    line-height: @avatar-size-sm;
+
+    .ant-avatar-icon {
+      font-size: @avatar-font-size-sm;
+    }
+  }
+
+  &-default {
+  }
+
+  // 图标 | icon
+  &-icon {
+  }
+}
