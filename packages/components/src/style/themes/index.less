@@ -1,11 +1,13 @@
-@import '../color/index.less';
 // 样式前缀
 @cz-prefix: cz;
 
 // -------- Colors -----------
-@primary-color: @blue-6;
+@primary-color: #1890ff;
 @white: #fff;
 @black: #000;
+@text-color: fade(@black, 85%);
+@component-background: #fff;
+@background-color-base: hsv(0, 0, 96%); // Default grey background color
 
 // ------- height-------------
 @height-base: 32px;
@@ -27,9 +29,18 @@
 @padding-xss: 4px; // more small
 
 // ------ border ------
-@border-radius-base: 50%; // width of the border for a component
-@border-width-base: 1px; // width of the border for a component
-@border-style-base: solid; // style of a components border
+@border-width-base: 1px;
+@border-style-base: solid;
+@border-radius-base: 2px;
+@border-color-base: hsv(0, 0, 85%);
+
+// -------fontSize-----
+@font-size-base: 14px;
+@font-size-lg: 16px;
+
+// Disabled states
+@disabled-color: fade(#000, 25%);
+@disabled-bg: @background-color-base;
 
 // ------ Button -------
 @btn-font-weight: 400;

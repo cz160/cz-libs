@@ -15,30 +15,63 @@ nav:
 ## 代码演示
 
 ```tsx
+/**
+ * title: 默认使用
+ * desc: 默认使用
+ */
 import React from 'react';
-import { Button } from '@cz160/components';
+import { Space, Button } from '@cz160/components';
 
 export default () => {
   return (
-    <>
-      <Button onClick={e => console.log(e)}>默认按钮</Button>
-      <br />
-      <br />
-      <Button type="primary">高亮按钮</Button>
-      <br />
-      <br />
-      <Button type="primary" disabled>
-        我被禁用
-      </Button>
-    </>
+    <Space>
+      <Button>111</Button>
+      <Button>222</Button>
+    </Space>
+  );
+};
+```
+
+```tsx
+/**
+ * title: 垂直方向
+ * desc: direction属性
+ */
+import React from 'react';
+import { Space, Button } from '@cz160/components';
+
+export default () => {
+  return (
+    <Space direction="vertical">
+      <Button>111</Button>
+      <Button>222</Button>
+    </Space>
+  );
+};
+```
+
+```tsx
+/**
+ * title: 自定义间距
+ * desc: size属性
+ */
+import React from 'react';
+import { Space, Button } from '@cz160/components';
+
+export default () => {
+  return (
+    <Space direction="vertical" size={24}>
+      <Button>111</Button>
+      <Button>222</Button>
+    </Space>
   );
 };
 ```
 
 ## API
 
-| 属性     | 说明             | 类型                   | 默认值    |
-| -------- | ---------------- | ---------------------- | --------- |
-| type     | 设置按钮类型     | `primary` \| `default` | `default` |
-| onClick  | 点击按钮时的回调 | (event) => void        | -         |
-| disabled | 设置按钮禁用     | boolean                | false     |
+| 属性      | 说明     | 类型                                       | 默认值     |
+| --------- | -------- | ------------------------------------------ | ---------- |
+| align     | 对齐方式 | `start` \| `end` \| `center` \| `baseline` | -          |
+| direction | 间距方向 | `vertical` \| `horizontal`                 | horizontal |
+| size      | 间距大小 | `small` \| `middle` \| `large` \| number   | small      |

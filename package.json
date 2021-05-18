@@ -32,7 +32,6 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "antd": "^4.15.5",
     "react": "^16.12.0"
   },
   "devDependencies": {
