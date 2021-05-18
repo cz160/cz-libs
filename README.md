@@ -1,5 +1,14 @@
 # 竹合
 
+- 集成组件库、方法库、hooks 的一个多包项目
+- npm 包名
+
+```
+组件库： @cz160/components
+方法库： @cz160/utils
+hooks库 @cz160/hooks
+```
+
 ## 起步
 
 - 安装多包依赖和相互依赖 link
