@@ -8,6 +8,7 @@
 @black: #000;
 @text-color: fade(@black, 85%);
 @component-background: #fff;
+@background-color-base: hsv(0, 0, 96%); // Default grey background color
 
 // ------- height-------------
 @height-base: 32px;
@@ -37,6 +38,10 @@
 // -------fontSize-----
 @font-size-base: 14px;
 @font-size-lg: 16px;
+
+// Disabled states
+@disabled-color: fade(#000, 25%);
+@disabled-bg: @background-color-base;
 
 // ------ Button -------
 @btn-font-weight: 400;
