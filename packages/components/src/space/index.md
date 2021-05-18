@@ -1,5 +1,5 @@
 ---
-title: Button 按钮
+title: Space 间距
 group:
   title: 基础组件
   path: /basis
@@ -8,9 +8,9 @@ nav:
   path: /components
 ---
 
-# Button
+# Space
 
-按钮组件
+间距
 
 ## 代码演示
 
@@ -19,18 +19,9 @@ import React from 'react';
 import { Button } from '@cz160/components';
 
 export default () => {
-  const setStyle = () => {
-    console.log('111');
-  };
   return (
     <>
-      <Button
-        onClick={() => {
-          setStyle();
-        }}
-      >
-        默认按钮
-      </Button>
+      <Button onClick={e => console.log(e)}>默认按钮</Button>
       <br />
       <br />
       <Button type="primary">高亮按钮</Button>
