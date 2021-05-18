@@ -17,7 +17,7 @@ nav:
 ```tsx
 import React, { useState } from 'react';
 import { useMount } from '@cz160/hooks';
-import { Button } from 'antd';
+import { Button } from '@cz160/components';
 
 export default () => {
   const [num, updateNum] = useState(0);
