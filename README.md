@@ -21,6 +21,7 @@ yarn bootstrap
 ```
 hooks: 公共hooks目录
 utils: 公共方法目录
+components: 公共组件目录
 ```
 
 ## lerna 常规操作
@@ -51,6 +52,19 @@ lerna add 包名(给所有包安装)
     },
 ```
 
-## 说明
+## 开发流程
+
+1. 以 master 最近版本拉出新分支
+
+```
+分支命名规范： feat/你的名字缩写/功能-时间（210517）
+```
+
+2. 进行开发
+3. 进行 rebase master 分支后，提交 Pr - cz160
+4. CodeReview
+5. 合并分支到 master
+
+## Q&A
 
 编写例子时使用 antd，全局引入 antd 样式
