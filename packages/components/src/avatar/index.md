@@ -1,5 +1,5 @@
 ---
-title: Avatar
+title: Avatar 头像
 group:
   title: 基础组件
   path: /basis
