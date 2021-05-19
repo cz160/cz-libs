@@ -1,0 +1,15 @@
+@import '../item/index.less';
+
+@breadcrumb-prefix-cls: ~'@{cz-prefix}-breadcrumb';
+
+.@{breadcrumb-prefix-cls} {
+  span:last-child .@{breadcrumb-prefix-cls}-separator {
+    display: none;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.45);
+    transition: color 0.3s;
+    transition-duration: none;
+  }
+}
