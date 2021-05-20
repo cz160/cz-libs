@@ -16,7 +16,7 @@ const Badge: React.FC<BadgeProps> = props => {
   const {
     prefixCls = 'cz-badge',
     size = 'default',
-    // offset,
+    offset,
     count,
     showZero = false,
     overflowCount = 99,
@@ -31,6 +31,14 @@ const Badge: React.FC<BadgeProps> = props => {
   currentCount = count > overflowCount ? `${overflowCount}+` : count;
   isMultipleWords = count > overflowCount || false;
 
+  let currentStyle: React.CSSProperties = {};
+  if (offset) {
+    currentStyle = {
+      marginTop: offset[1],
+      right: -offset[0],
+    };
+  }
+
   return (
     <span className={prefixCls}>
       {children}
@@ -40,10 +48,7 @@ const Badge: React.FC<BadgeProps> = props => {
             [`${prefixCls}-count-sm`]: size === 'small',
             [`${prefixCls}-multiple-words`]: isMultipleWords,
           })}
-          // style={{
-          //   marginLeft: left,
-          //   right: -top,
-          // }}
+          style={currentStyle}
         >
           {currentCount}
         </sup>

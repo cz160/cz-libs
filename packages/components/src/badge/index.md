@@ -25,7 +25,7 @@ export default () => {
       <Badge count={5} size="small">
         <a href="#" className="head-example" />
       </Badge>
-      <Badge count={5} offset={[10, 10]}>
+      <Badge count={5} offset={[10, 20]}>
         <a href="#" className="head-example" />
       </Badge>
       <Badge count={5}>
