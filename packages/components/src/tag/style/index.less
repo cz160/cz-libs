@@ -31,6 +31,21 @@
     margin-left: 3px;
     font-size: @font-size-lg;
   }
+
+  .make-color-classes(@i: length(@preset-colors))when (@i > 0) {
+    .make-color-classes(@i - 1);
+    @color: extract(@preset-colors, @i);
+    @lightColor: '@{color}-base';
+    @borderColor: '@{color}-base-5';
+    @backgroundColor: '@{color}-base-2';
+
+    &-@{color} {
+      color: @@lightColor;
+      background-color: @@backgroundColor;
+      border-color: @@borderColor;
+    }
+  }
+
   .make-status-color-classes(@color, @status) {
     @lightColor: '@{color}-base';
     @borderColor: '@{color}-base-5';
@@ -42,6 +57,9 @@
       border-color: @@borderColor;
     }
   }
+
+  .make-color-classes();
+
   .make-status-color-classes('green', success);
   .make-status-color-classes('blue', processing);
   .make-status-color-classes('red', error);
