@@ -1,3 +1,5 @@
+@import '../../style/color/index.less';
+
 @tag-prefix-cls: ~'@{cz-prefix}-tag';
 
 .@{tag-prefix-cls} {
@@ -29,4 +31,19 @@
     margin-left: 3px;
     font-size: @font-size-lg;
   }
+  .make-status-color-classes(@color, @status) {
+    @lightColor: '@{color}-base';
+    @borderColor: '@{color}-base-5';
+    @backgroundColor: '@{color}-base-2';
+
+    &-@{status} {
+      color: @@lightColor;
+      background-color: @@backgroundColor;
+      border-color: @@borderColor;
+    }
+  }
+  .make-status-color-classes('green', success);
+  .make-status-color-classes('blue', processing);
+  .make-status-color-classes('red', error);
+  .make-status-color-classes('orange', warning);
 }
