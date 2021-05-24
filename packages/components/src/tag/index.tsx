@@ -1,9 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import cx from 'classnames';
+import { PresetColorTypes, StatusColorTypes } from '../../../utils/src/colors';
 interface TagProps {
   closable?: boolean;
   prefixCls?: string;
-  closeIcon?: React.ReactNode;
+  // closeIcon?: React.ReactNode;
   color?: string;
   visible?: boolean;
   onClose?: (e) => void;
@@ -11,9 +12,25 @@ interface TagProps {
 }
 
 const Tag: React.FC<TagProps> = props => {
-  const { prefixCls = 'cz-tag', children, closable, onClose } = props;
+  const {
+    prefixCls = 'cz-tag',
+    children,
+    closable,
+    color,
+    onClose,
+    visible,
+  } = props;
 
-  const [isHidden, setIsHidden] = useState(false);
+  const isPresetColor = PresetColorTypes.includes(color);
+  const isStatusColor = StatusColorTypes.includes(color);
+  const hasColor = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(color);
+
+  const style = {
+    backgroundColor:
+      !isPresetColor && !isStatusColor && color && hasColor ? color : undefined,
+  };
+
+  const [isHidden, setIsHidden] = useState(visible || false);
 
   const handleClick = useCallback(
     e => {
@@ -27,8 +44,11 @@ const Tag: React.FC<TagProps> = props => {
   return (
     <span
       className={cx(prefixCls, {
-        [`${prefixCls}-hidden`]: isHidden,
+        [`${prefixCls}-hidden`]: isHidden && !visible,
+        [`${prefixCls}-${color}`]: isPresetColor || isStatusColor,
+        [`${prefixCls}-has-color`]: color && hasColor && !isPresetColor,
       })}
+      style={style}
     >
       {children}
       {closable ? (
