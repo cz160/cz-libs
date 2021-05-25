@@ -1,0 +1,38 @@
+@badge-prefix-clx: ~'@{cz-prefix}-badge';
+
+.@{badge-prefix-clx} {
+  // demo
+  margin-right: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+
+  &-count {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(50%, -50%);
+    text-align: center;
+
+    background-color: @badge-default-backgroundColor;
+    border-radius: @badge-border-radius-base;
+    min-width: @badge-size-base;
+    height: @badge-size-base;
+    line-height: @badge-size-base;
+
+    color: @white;
+    font-size: @badge-font-size-base;
+
+    &-sm {
+      border-radius: @badge-border-radius-sm;
+      height: @badge-size-sm;
+      line-height: @badge-size-sm;
+      min-width: @badge-size-sm;
+      padding: 0;
+    }
+  }
+
+  &-multiple-words {
+    padding: 0 8px;
+  }
+}
