@@ -1,0 +1,68 @@
+@import '../../style/color/index.less';
+
+@tag-prefix-cls: ~'@{cz-prefix}-tag';
+
+.@{tag-prefix-cls} {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: @tag-default-background-color;
+  border-radius: @tag-border-radius-base;
+  border: @tag-border-width @tag-border-style @tag-default-border;
+  font-size: @tag-font-size-base;
+  margin: 0 @tag-margin-base 0 0;
+  padding: 0 @tag-padding-base;
+  line-height: @tag-line-height-base;
+
+  a,
+  a:hover {
+    color: @text-color;
+    text-decoration: none;
+  }
+
+  &-hidden {
+    display: none;
+  }
+
+  &-has-color {
+    color: @white;
+  }
+
+  &-close-icon {
+    cursor: pointer;
+    margin-left: 3px;
+    font-size: @font-size-lg;
+  }
+
+  .make-color-classes(@i: length(@preset-colors))when (@i > 0) {
+    .make-color-classes(@i - 1);
+    @color: extract(@preset-colors, @i);
+    @lightColor: '@{color}-base';
+    @borderColor: '@{color}-base-5';
+    @backgroundColor: '@{color}-base-2';
+
+    &-@{color} {
+      color: @@lightColor;
+      background-color: @@backgroundColor;
+      border-color: @@borderColor;
+    }
+  }
+
+  .make-status-color-classes(@color, @status) {
+    @lightColor: '@{color}-base';
+    @borderColor: '@{color}-base-5';
+    @backgroundColor: '@{color}-base-2';
+
+    &-@{status} {
+      color: @@lightColor;
+      background-color: @@backgroundColor;
+      border-color: @@borderColor;
+    }
+  }
+
+  .make-color-classes();
+
+  .make-status-color-classes('green', success);
+  .make-status-color-classes('blue', processing);
+  .make-status-color-classes('red', error);
+  .make-status-color-classes('orange', warning);
+}
