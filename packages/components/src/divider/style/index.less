@@ -1,0 +1,18 @@
+@divider-prefix-cls: ~'@{cz-prefix}-divider';
+
+.@{divider-prefix-cls} {
+  border-top: @border-width-base @border-style-base @border-color-base;
+  color: @divider-default-color;
+  font-size: 12px;
+
+  &-horizontal {
+    clear: both;
+    display: flex;
+    margin: 24px 0;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  &- {
+  }
+}
