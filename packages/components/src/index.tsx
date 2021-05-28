@@ -4,3 +4,4 @@ export { default as Space } from './space';
 export { default as Breadcrumb } from './breadcrumb';
 export { default as Tag } from './tag';
 export { default as Badge } from './badge';
+export { default as Divider } from './divider';
