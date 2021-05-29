@@ -1,3 +1,4 @@
 import useMount from './useMount';
+import useUnmount from './useUnmount';
 
-export { useMount };
+export { useMount, useUnmount };
