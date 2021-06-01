@@ -27,10 +27,16 @@ const Divider: React.FC<DividerProps> = props => {
       className={cx(prefixCls, className, {
         [`${prefixCls}-${type}`]: type,
         [`${prefixCls}-with-text`]: children,
-        [`${prefixCls}-with-text-${orientation}`]: orientation,
+        [`${prefixCls}-with-text-${orientation}`]: children && orientation,
       })}
     >
-      {children}
+      <span
+        className={cx({
+          [`${prefixCls}-inner-text`]: children,
+        })}
+      >
+        {children}
+      </span>
     </div>
   );
 };

@@ -19,9 +19,6 @@ import React from 'react';
 import { Divider } from '@cz160/components';
 
 export default () => {
-  const setStyle = () => {
-    console.log('111');
-  };
   return (
     <>
       <div>
@@ -46,35 +43,48 @@ export default () => {
       </div>
       <br />
       <br />
+
+      <div>
+        <header>带文字的分割线</header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
+          merninisti licere mihi ista probare, quae sunt a te dicta? Refert
+          tamen, quo modo.
+        </p>
+        <Divider>Text</Divider>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
+          merninisti licere mihi ista probare, quae sunt a te dicta? Refert
+          tamen, quo modo.
+        </p>
+        <Divider orientation="left">Left Text</Divider>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
+          merninisti licere mihi ista probare, quae sunt a te dicta? Refert
+          tamen, quo modo.
+        </p>
+        <Divider orientation="right">Right Text</Divider>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
+          merninisti licere mihi ista probare, quae sunt a te dicta? Refert
+          tamen, quo modo.
+        </p>
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <header>垂直分割线</header>
+        Text
+        <Divider type="vertical" />
+        <a href="#">Link</a>
+        <Divider type="vertical" />
+        <a href="#">Link</a>
+      </div>
     </>
   );
 };
 ```
-
-<!--
-<div>
-      <header>带文字的分割线</header>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
-    </p>
-    <Divider>Text</Divider>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
-    </p>
-    <Divider orientation="left">Left Text</Divider>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
-    </p>
-    <Divider orientation="right">Right Text</Divider>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
-    </p>
-      </div>
-       -->
 
 ## API
 
