@@ -15,5 +15,5 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: 组件中心
     desc: 日常使用组件封装
-footer: 积小流以成江海,积硅步以至千里！！！
+footer: 积小流以至江海，积跬步以至千里
 ---
