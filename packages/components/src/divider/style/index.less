@@ -1,0 +1,70 @@
+@divider-prefix-cls: ~'@{cz-prefix}-divider';
+@border-base: @border-width-base @border-style-base @border-color-base;
+
+.@{divider-prefix-cls} {
+  border-top: @border-base;
+  color: @divider-default-color;
+  font-size: 12px;
+
+  &-horizontal {
+    clear: both;
+    display: flex;
+    margin: 24px 0;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  &-vertical {
+    margin: 0 8px;
+    border-top: 0px;
+    border-left: @border-base;
+    height: 0.9em;
+    display: inline-block;
+  }
+
+  &-with-text {
+    margin: 16px 0;
+    border-top: 0px;
+    // align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+
+    &::before,
+    &::after {
+      content: '';
+      border-top: @border-base;
+      color: @divider-default-color;
+      width: 50%;
+      top: 50%;
+      transform: translateY(50%);
+    }
+
+    &-left {
+      &::before {
+        width: 5%;
+      }
+
+      &::after {
+        width: 95%;
+      }
+    }
+
+    &-right {
+      &::before {
+        width: 95%;
+      }
+
+      &::after {
+        width: 5%;
+      }
+    }
+  }
+
+  &-inner-text {
+    padding: 0 1em;
+  }
+}
