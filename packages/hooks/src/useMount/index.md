@@ -6,6 +6,7 @@ group:
 nav:
   title: hooks
   path: /hooks
+  order: 3
 ---
 
 # useMount

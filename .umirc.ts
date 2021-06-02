@@ -1,4 +1,6 @@
 import { defineConfig } from 'dumi';
+import { nav } from './config';
+
 export default defineConfig({
   title: '竹合',
   favicon: '/logo.jpeg',
@@ -7,4 +9,5 @@ export default defineConfig({
   mode: 'site',
   publicPath: '/cz-libs/',
   base: '/cz-libs/',
+  navs: nav,
 });

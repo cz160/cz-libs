@@ -75,5 +75,3 @@ lerna add 包名(给所有包安装)
 5. 合并分支到 master
 
 ## Q&A
-
-编写例子时使用 antd，全局引入 antd 样式

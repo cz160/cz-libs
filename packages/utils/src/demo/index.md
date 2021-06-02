@@ -6,6 +6,7 @@ group:
 nav:
   title: 方法库
   path: /utils
+  order: 4
 ---
 
 # Add 累加器
