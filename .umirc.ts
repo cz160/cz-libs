@@ -1,9 +1,10 @@
 import { defineConfig } from 'dumi';
-
 export default defineConfig({
   title: '竹合',
-  favicon: 'http://www.czhuangjia.top/usr/themes/GreenGrapes/img/head.jpg',
-  logo: 'http://www.czhuangjia.top/usr/themes/GreenGrapes/img/head.jpg',
+  favicon: '/logo.jpeg',
+  logo: '/logo.jpeg',
   outputPath: 'docs-dist',
   mode: 'site',
+  publicPath: '/cz-libs/',
+  base: '/cz-libs/',
 });

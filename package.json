@@ -7,7 +7,7 @@
     "createLib": "cd packages && lerna create",
     "start": "yarn  && dumi dev",
     "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
+    "deploy": "bash deploy.sh",
     "build": "lerna run build",
     "build:h": "lerna run build --scope=@cz160/hooks",
     "build:u": "lerna run build --scope=@cz160/utils",
