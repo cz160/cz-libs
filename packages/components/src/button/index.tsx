@@ -7,6 +7,7 @@ export interface ButtonProps {
   type?: ButtonTypes;
   children: React.ReactNode;
   prefixCls?: string;
+  className?: string;
   onClick?: (e: any) => void;
   disabled?: boolean;
 }
@@ -15,6 +16,7 @@ const Button: React.FC<ButtonProps> = props => {
     type = 'default',
     disabled = false,
     children,
+    className,
     prefixCls = 'cz-btn',
     onClick,
   } = props;
@@ -34,6 +36,7 @@ const Button: React.FC<ButtonProps> = props => {
       className={cx(prefixCls, {
         [`${prefixCls}-${type}`]: type && !disabled,
         [`${prefixCls}-disabled`]: disabled,
+        [className]: className,
       })}
       onClick={handleClick}
     >

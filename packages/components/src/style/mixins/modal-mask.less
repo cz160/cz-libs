@@ -1,0 +1,34 @@
+@import 'box';
+
+@modal-mask-modal-prefix-cls: ~'@{cz-prefix}-modal';
+@modal-mask-image-prefix-cls: ~'@{cz-prefix}-image-preview';
+
+.modal-mask() {
+  .@{modal-mask-modal-prefix-cls},
+  .@{modal-mask-image-prefix-cls} {
+    pointer-events: none;
+  }
+
+  .@{modal-mask-modal-prefix-cls}-mask,
+  .@{modal-mask-image-prefix-cls}-mask {
+    .box(fixed);
+    z-index: @zindex-modal-mask;
+    height: 100%;
+    background-color: @modal-mask-bg;
+    filter: ~'alpha(opacity=50)';
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  .@{modal-mask-modal-prefix-cls}-wrap,
+  .@{modal-mask-image-prefix-cls}-wrap {
+    .box(fixed);
+    overflow: auto;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.modal-mask();
