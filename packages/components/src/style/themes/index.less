@@ -8,11 +8,21 @@
 @text-color: fade(@black, 85%);
 @component-background: #fff;
 @background-color-base: hsv(0, 0, 96%); // Default grey background color
+@heading-color: fade(@black, 85%);
+@text-color-secondary: fade(@black, 45%);
+@icon-color-hover: fade(@black, 75%);
 
+@shadow-2: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+  0 9px 28px 8px rgba(0, 0, 0, 0.05);
+@shadow-color: rgba(0, 0, 0, 0.45);
 // ------- height-------------
 @height-base: 32px;
 @height-lg: 40px;
 @height-sm: 24px;
+
+@zindex-popup-close: 10;
+@zindex-modal-mask: 1000;
+@animation-duration-slow: 0.3s; // Modal
 
 // vertical margins
 @margin-lg: 24px; // containers
@@ -33,12 +43,19 @@
 @border-style-base: solid;
 @border-radius-base: 2px;
 @border-color-base: hsv(0, 0, 85%);
+@border-color-split: hsv(0, 0, 94%); // split border inside a component
 
 // -------fontSize-----
 @font-size-sm: 12px;
 @font-size-base: 14px;
 @font-size-lg: 16px;
 
+@line-height-base: 1.5715;
+
+// Medium screen / desktop
+@screen-md: 768px;
+@screen-md-min: @screen-md;
+@screen-sm-max: (@screen-md-min - 1px);
 // Disabled states
 @disabled-color: fade(#000, 25%);
 @disabled-bg: @background-color-base;
@@ -96,3 +113,22 @@
 // ------ Divider ------
 
 @divider-default-color: @text-color;
+
+//-------- Modal --------
+@modal-header-padding-vertical: @padding-md;
+@modal-header-padding-horizontal: @padding-lg;
+@modal-body-padding: @padding-lg;
+@zindex-modal: 1000;
+@modal-heading-color: @heading-color;
+@modal-header-title-font-size: @font-size-lg;
+@modal-header-title-line-height: 22px;
+@modal-content-bg: @component-background;
+@modal-header-padding: @modal-header-padding-vertical
+  @modal-header-padding-horizontal;
+@modal-header-bg: @component-background;
+@modal-header-border-width: @border-width-base;
+@modal-header-border-style: @border-style-base;
+@modal-header-border-color-split: @border-color-split;
+@modal-mask-bg: fade(@black, 45%);
+@modal-close-color: @text-color-secondary;
+@modal-header-close-size: 56px;
