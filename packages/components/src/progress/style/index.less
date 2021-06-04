@@ -1,0 +1,39 @@
+@progress-prefix-cls: ~'@{cz-prefix}-progress';
+
+.@{progress-prefix-cls} {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: @progress-font-size-base;
+
+  &-show-info {
+    .@{progress-prefix-cls}-outer {
+      // margin-right: calc((-1 * @progress-text-width-default) - 8px);
+      // margin-right: calc(-1 * @progress-text-width-default - 8px);
+      margin-right: calc(-@progress-default-text-width - 8px);
+      padding-right: calc(@progress-default-text-width + 16px);
+    }
+  }
+
+  &-outer {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &-inner {
+    width: 100%;
+    position: relative;
+    background-color: @background-color-base;
+    border-radius: @progress-default-border-radius;
+  }
+
+  &-bg {
+    height: @progress-height-bg;
+    background-color: @progress-primary-color-bg;
+    border-radius: @progress-default-border-radius;
+  }
+
+  &-text {
+    width: @progress-default-text-width;
+  }
+}

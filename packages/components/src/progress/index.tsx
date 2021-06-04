@@ -33,9 +33,11 @@ const Progress: React.FC<ProgressProps> = props => {
           ></div>
         </div>
       </div>
-      <span className={`${prefixCls}-text`} title={`${percent}%`}>
-        {percent}%
-      </span>
+      {showInfo && (
+        <span className={`${prefixCls}-text`} title={`${percent}%`}>
+          {percent}%
+        </span>
+      )}
     </div>
   );
 };
