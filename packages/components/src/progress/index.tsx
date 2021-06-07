@@ -22,6 +22,7 @@ const Progress: React.FC<ProgressProps> = props => {
       className={cx(prefixCls, {
         [`${prefixCls}-${type}`]: type && type !== 'line',
         [`${prefixCls}-status-${status}`]: status,
+        [`${prefixCls}-status-success`]: percent >= 100,
         [`${prefixCls}-show-info`]: showInfo,
       })}
     >
