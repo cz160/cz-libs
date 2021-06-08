@@ -34,5 +34,8 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "gitHead": "656a3238ee9001e359465936f41d45f9f2559b72"
+  "gitHead": "656a3238ee9001e359465936f41d45f9f2559b72",
+  "dependencies": {
+    "father-build": "^1.19.6"
+  }
 }

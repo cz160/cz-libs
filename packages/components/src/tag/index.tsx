@@ -1,6 +1,30 @@
 import React, { useCallback, useState } from 'react';
 import cx from 'classnames';
-import { PresetColorTypes, StatusColorTypes } from '../../../utils/src/colors';
+
+export const PresetColorTypes = [
+  'pink',
+  'red',
+  'yellow',
+  'orange',
+  'cyan',
+  'green',
+  'blue',
+  'purple',
+  'geekblue',
+  'magenta',
+  'volcano',
+  'gold',
+  'lime',
+];
+
+export const StatusColorTypes = [
+  'success',
+  'processing',
+  'error',
+  'default',
+  'warning',
+];
+
 interface TagProps {
   closable?: boolean;
   prefixCls?: string;
