@@ -1,4 +1,4 @@
-## generator(生成器)
+## Generator(生成器)
 
 > 简介
 

@@ -1,4 +1,4 @@
-## async await
+## Async await
 
 ```js
 const getData = () =>

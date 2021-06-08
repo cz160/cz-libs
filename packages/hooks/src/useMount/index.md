@@ -18,7 +18,7 @@ nav:
 ```tsx
 import React, { useState } from 'react';
 import { useMount } from '@cz160/hooks';
-import { Button } from '@cz160/components';
+import { Button, Space } from '@cz160/components';
 
 export default () => {
   const [num, updateNum] = useState(0);
@@ -28,26 +28,18 @@ export default () => {
   });
 
   return (
-    <>
-      <div>{num}</div>
+    <Space>
+      <Button>当前：{num}</Button>
       <Button type="primary" onClick={() => updateNum(num + 1)}>
-        更新
+        +
       </Button>
-    </>
+    </Space>
   );
 };
 ```
 
-## API
-
-```
-const [ visible, showModal, hideModal,updateVisible ] = useModalVisible(
-  initialVisible?: boolean,
-);
-```
-
 ## Params
 
-| 参数           | 说明                     | 类型    | 默认值 |
-| -------------- | ------------------------ | ------- | ------ |
-| initialVisible | 可选项，传入默认的状态值 | boolean | false  |
+| 参数 | 说明                 | 类型       | 默认值 |
+| ---- | -------------------- | ---------- | ------ |
+| fn   | 需要被执行的回掉函数 | () => void | -      |
