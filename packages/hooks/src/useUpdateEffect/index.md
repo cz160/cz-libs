@@ -1,5 +1,5 @@
 ---
-title: useMount
+title: useUpdateEffect
 group:
   title: 生命周期
   path: /liftCycle
@@ -9,23 +9,23 @@ nav:
   order: 3
 ---
 
-# useMount
+# useUpdateEffect
 
-生命周期初始化钩子函数
+依赖更新时钩子函数
 
 ## 代码演示
 
 ```tsx
 import React, { useState } from 'react';
-import { useMount } from '@cz160/hooks';
+import { useUpdateEffect } from '@cz160/hooks';
 import { Button, Space } from '@cz160/components';
 
 export default () => {
   const [num, updateNum] = useState(0);
 
-  useMount(() => {
-    console.log('我只会在初始化执行');
-  });
+  useUpdateEffect(() => {
+    console.log('我只会在num更新时执行');
+  }, [num]);
 
   return (
     <Space>
@@ -43,3 +43,4 @@ export default () => {
 | 参数 | 说明                 | 类型       | 默认值 |
 | ---- | -------------------- | ---------- | ------ |
 | fn   | 需要被执行的回调函数 | () => void | -      |
+| deps | 依赖项               | any[]      | -      |
