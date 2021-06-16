@@ -5,10 +5,12 @@
   width: 100%;
   font-size: @progress-font-size-base;
 
+  &-small {
+    font-size: @font-size-sm;
+  }
+
   &-show-info {
     .@{progress-prefix-cls}-outer {
-      // margin-right: calc((-1 * @progress-text-width-default) - 8px);
-      // margin-right: calc(-1 * @progress-text-width-default - 8px);
       margin-right: calc(-@progress-default-text-width - 8px);
       padding-right: calc(@progress-default-text-width + 16px);
     }
@@ -25,7 +27,7 @@
       background: @white;
       border-radius: 10px;
       opacity: 0;
-      animation: ~'@{progress-prefix-cls}-active' 2.4s infinite;
+      animation:~'@{progress-prefix-cls}-active'2.4s infinite;
     }
   }
 

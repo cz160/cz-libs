@@ -6,6 +6,7 @@ interface ProgressProps {
   percent?: number;
   status?: 'success' | 'exception' | 'normal' | 'active';
   type?: 'line' | 'circle' | 'dashboard';
+  size?: 'small' | 'default';
   showInfo?: boolean;
 }
 
@@ -15,13 +16,16 @@ const Progress: React.FC<ProgressProps> = props => {
     percent,
     status,
     type = 'line',
+    size = 'default',
     showInfo = true,
   } = props;
+  const height = size && size === 'small' ? 6 : 8;
   return (
     <div
       className={cx(prefixCls, {
         [`${prefixCls}-${type}`]: type && type !== 'line',
         [`${prefixCls}-status-${status}`]: status,
+        [`${prefixCls}-${size}`]: size,
         [`${prefixCls}-status-success`]: percent >= 100,
         [`${prefixCls}-show-info`]: showInfo,
       })}
@@ -30,7 +34,7 @@ const Progress: React.FC<ProgressProps> = props => {
         <div className={`${prefixCls}-inner`}>
           <div
             className={`${prefixCls}-bg`}
-            style={{ width: `${percent}%` }}
+            style={{ width: `${percent}%`, height: `${height}px` }}
           ></div>
         </div>
       </div>
