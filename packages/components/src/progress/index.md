@@ -1,5 +1,5 @@
 ---
-title: Progress 分割线
+title: Progress 进度条
 group:
   title: 基础组件
   path: /basis
@@ -10,7 +10,7 @@ nav:
 
 # Progress
 
-分割线组件
+进度条组件
 
 ## 代码演示
 
