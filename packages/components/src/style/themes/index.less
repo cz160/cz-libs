@@ -1,3 +1,4 @@
+@import '../color/index.less';
 // 样式前缀
 @cz-prefix: cz;
 
@@ -108,7 +109,7 @@
 @badge-border-radius-base: 10px;
 @badge-border-radius-sm: 14px;
 
-@badge-default-backgroundColor: #ff4d4f;
+@badge-default-backgroundColor: @red-base;
 
 // ------ Divider ------
 
@@ -132,3 +133,13 @@
 @modal-mask-bg: fade(@black, 45%);
 @modal-close-color: @text-color-secondary;
 @modal-header-close-size: 56px;
+// ------ Progress ------
+
+@progress-font-size-base: @font-size-base;
+@progress-primary-color-bg: @primary-color;
+@progress-height-bg: 8px;
+@progress-default-text-width: 2em;
+@progress-default-border-radius: 100px;
+@progress-primary-border-radius: 100px;
+
+@success-color: @green-base;

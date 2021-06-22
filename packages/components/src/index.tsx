@@ -6,3 +6,4 @@ export { default as Tag } from './tag';
 export { default as Badge } from './badge';
 export { default as Divider } from './divider';
 export { default as Modal } from './modal';
+export { default as Progress } from './progress';
