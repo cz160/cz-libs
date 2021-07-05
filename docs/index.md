@@ -1,6 +1,6 @@
 ---
 hero:
-  title: 前端知识分享
+  title: 小昭聊前端
   desc: 日常思考博文编写,个人组件库、方法库、hooks库集成
   actions:
     - text: 开始探索
@@ -15,5 +15,5 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: 组件中心
     desc: 日常使用组件封装
-footer: 积小流以至江海，积跬步以至千里
+footer: Copyright © 2021 竹合 湘ICP备18006615号-1
 ---
