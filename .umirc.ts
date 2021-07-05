@@ -7,7 +7,5 @@ export default defineConfig({
   logo: '/logo.jpeg',
   outputPath: 'docs-dist',
   mode: 'site',
-  publicPath: '/cz-libs/',
-  base: '/cz-libs/',
   navs: nav,
 });
