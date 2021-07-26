@@ -1,0 +1,22 @@
+@pagination-prefix-cls: ~'@{cz-prefix}-pagination';
+
+.@{pagination-prefix-cls} {
+  &-item,
+  &-prev,
+  &-next {
+    display: inline-block;
+    width: @pagination-size-base;
+    height: @pagination-size-base;
+    line-height: @pagination-size-base;
+    text-align: center;
+    border: 1px solid @pagination-default-border-color;
+    color: @pagination-default-color;
+    margin-right: @pagination-default-margin;
+    cursor: pointer;
+
+    &-active {
+      border-color: @pagination-active-color;
+      color: @pagination-active-color;
+    }
+  }
+}
