@@ -1,6 +1,6 @@
 ---
 hero:
-  title: 小昭聊前端
+  title: 竹合聊前端
   desc: 日常思考博文编写,个人组件库、方法库、hooks库集成
   actions:
     - text: 开始探索
